@@ -1,22 +1,17 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
 import NavBar from '../components/Navbar'
-import Homy from '../components/Home'
+import Home from '../components/Home'
 import Search from '../components/Search'
-import Main from '../components/Main'
-import Icons from '../components/Icons'
+ import Icons from '../components/Icons'
 
-const Home =() =>{
+const Index =() =>{
   return(
     <div>
-       <NavBar />
-       <Homy />
+       <Home />
        <Search />
-       <Main />
-       <Icons />
+       <Icons /> 
     </div>
   )
 }
 
-export default Home;
+export default Index;
 

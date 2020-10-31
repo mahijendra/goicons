@@ -3,7 +3,12 @@ module.exports = {
       removeDeprecatedGapUtilities: true,
     },
     purge: ['./components/**/*.{js,ts,jsx,tsx}', './pages/**/*.{js,ts,jsx,tsx}'],
-    theme: {      
+    theme: {   fontFamily: {
+
+  'sans': ['Helvetica'],
+
+           
+            }    
     },
     variants: {},
     plugins: [],

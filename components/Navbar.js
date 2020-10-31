@@ -5,27 +5,26 @@ import Link from "next/link"
 
 const Navbar = () => {
     return (
-        <nav className=" font-sans flex items-center justify-between flex-wrap bg-blue-300 pt-1 pl-5">
-  <div className="flex items-center flex-shrink-0 text-black mr-6 ">
-    <span className="font-semibold text-5xl tracking-tight">Go Icons</span>
-  </div>
-  <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto flex-row-reverse ">
-    <div className="font-sans text-sm ">
-      <a href="https://twitter.com/compose/tweet" className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-white mr-4 divide-y divide-gray-400">
-        Share on twitter
-      </a>
+        <nav className=" font-sans flex items-center justify-between flex-wrap bg-gray-500 py-24 px-40 pb-3">
 
-    </div>
-  </div>
+              {/* <div className="flex items-center flex-shrink-0 text-black mr-6 ">
+                <span className="font-semibold text-5xl tracking-tight">Go Icons</span>
+              </div>
+              <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto flex-row-reverse ">
+                <div className="font-sans text-sm ">
+                  <a href="https://twitter.com/compose/tweet" className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-white mr-4 divide-y divide-gray-400">
+                    Share on twitter
+                  </a>
 
-     <div className="font-museo-sans text-sm ">
-    <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-teal-500 hover:text-white mr-4">
-
-      </a>
-    </div> 
-</nav>
+                </div>
+              </div> */}
+        </nav>
 
 
+
+       
+
+         
 
  
  
