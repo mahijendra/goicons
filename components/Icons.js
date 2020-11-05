@@ -1,34 +1,27 @@
-import React, {useState} from "react";
-
+import React, { useState } from "react";
+import '../pages/_app'
 
 function Icons(props) {
-
-  const {svgItem} =  props;
-  const {title, d} = svgItem;
+  const { svgItem } = props;
+  const { title, d } = svgItem;
   const [showIcon, setShowIcon] = useState(true);
 
-  
-function enableShowTitle(){
-  setShowIcon(true)
-}
+  function enableShowTitle() {
+    setShowIcon(true);
+  }
 
   return (
-
-  <div className="hover:bg-opacity-25 inline-block mt-20 items-center">
-  <svg width="64" height="64" viewBox="0 0 32 32" >
-  { showIcon ? <path d={d}></path> : null  }
-
-  </svg>
-
-  </div>
-
-
-);
-
+    
+<svg width="32" height="32" viewBox="0 0 32 32" fill="white">
+        {showIcon ? <path d={d}></path> : null}
+      </svg>
+  );
 }
 
 export default Icons;
 
+
+// style={{display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gridGap: '10px'}}  className="transform hover:scale-105 hover:bg-opacity-75 transition duration-300 bg-white inline-block mt-20 items-center mr-24
 
 
 // return(
@@ -37,12 +30,12 @@ export default Icons;
 //           {Array.from({length : 200}).map((_,index)=><Icon key={index} />)}
 //        </div>
 //  </div>
-  
+
 //  )
 // };
 
 // const Icon = () => (
-  
+
 //   <div className="flex p-4 justify-center items-center object-center hover:bg-teal-200">
 //     <svg width="24px" height="24px" viewBox="0 0 32 32">
 //       <path
@@ -62,7 +55,6 @@ export default Icons;
 // const Icons = () => {
 //   return (
 // <div>
-    
 
 //     <div className="py-10 px-40 ">
 //       <div className="grid grid-cols-6 items-center justify-center gap-4">
@@ -73,17 +65,8 @@ export default Icons;
 //   );
 // };
 
-
- 
-
-
-
-
-
-
 // const iconsData = [
 
-  
 //   {
 //     "title": "leftArrow",
 //     "d" : 'M17.821 12.325c-3.709.645-6.966 2.37-9.771 5.175-3.012 3.012-4.779 6.545-5.3 10.6 1.767-2.944 4.417-5.594 7.95-7.95 3.533-2.356 6.183-3.239 7.95-2.65v3.3a1 1 0 001.6.8l7.933-5.95a1 1 0 000-1.6L20.25 8.1a1 1 0 00-1.6.8v2.44a1 1 0 01-.829.985z',

@@ -28,7 +28,7 @@ const Home = () => {
           <p className="py-2 text-1xl font-medium antialiased text-white "></p>
         </div>
 
-        <div className=" " >
+        <div className="">
           <button className=" bg-gray-300 text-gray-300 font-bold py-3 px-4 rounded inline-flex items-center mr-4 transform hover:scale-105 hover:bg-opacity-25 transition duration-300 ease-in-out focus:outline-none rounded-lg bg-opacity-25">
             
             <span className="bg-none mx-4 my-1">Download All</span>
@@ -47,11 +47,7 @@ const Home = () => {
               View on Github
             </span>
           </button>
-          <br></br>
 
-
-          
-<div>
           <div className="inline-block flex h-8 flex-row-reverse bg-none ">
           <svg
             className="h-5 w-5 text-gray-400 mr-2 bg-none"
@@ -94,11 +90,15 @@ const Home = () => {
               d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
             />
           </svg>
-        </div>
+        </div> 
+
+
+          
+
+          
         </div>
         </div>
       </div>
-    </div>
   );
 };
 

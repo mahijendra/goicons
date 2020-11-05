@@ -17,7 +17,7 @@ const Search = () => {
                 </svg>
             </div>
             <div className="pr-8 pt-0 pl-8">
-            <input id="email" className="form-input min-w-full p-2 bg-gray-100  rounded-l-md rounded-r-md pl-12 sm:text-sm sm:leading-10 focus:outline-none text-gray-300 " placeholder="Search all 200 Icons"></input>
+            <input id="email" className="form-input min-w-full p-2 bg-transparent text-gray-100 border-gray-100 border bg-opacity-gray-100 rounded-l-md rounded-r-md pl-12 sm:text-sm sm:leading-10 focus:outline-none " placeholder="Search all 200 Icons"></input>
           </div>
           </div>
         </div>
