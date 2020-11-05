@@ -603,7 +603,7 @@ const data = [
 
 function SvgListDisplay(props) {
   return (
-    <div className="px-40 py-40 onHover" style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gridGap: '10px', gridAutoRows: '80px', placeItems: "center"}}>
+    <div className="px-40 py-24 " style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gridGap: '10px', gridAutoRows: '80px', placeItems: "center"}}>
       {data.map((svgItem) => (
         <Icons svgItem={svgItem} key={svgItem.id + Math.random} />
       ))}
