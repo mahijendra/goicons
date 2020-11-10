@@ -6,6 +6,7 @@ import Svg from "../components/Svg";
 import svgData from "../components/svgData";
 
 const Index = () => {
+  // eslint-disable-next-line no-unused-vars
   const [svgItems, setSvgItems] = useState(svgData);
   const [searchTerm, setSearchTerm] = useState("");
   const [searchResults, setSearchResults] = useState([]);

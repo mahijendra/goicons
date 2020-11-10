@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import Icons from "./Icons";
-import myPropTypes from 'prop-types';
+
 
 function Svg({ searchResults, handleMouse, showSvgTitle }) {
   return (
@@ -26,4 +26,6 @@ function Svg({ searchResults, handleMouse, showSvgTitle }) {
     </div>
   );
 }
+
+
 export default Svg;
