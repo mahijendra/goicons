@@ -1,16 +1,8 @@
-import React from "react"
-import Link from "next/link"
+import React from "react";
+
 
 const Main = () => {
-    return(
-       <div >
-
-           
-
-        </div>
-
-
-    );
-}
+  return <div></div>;
+};
 
 export default Main;

@@ -1,13 +1,10 @@
 import React from "react";
-import Link from "next/link"
-
 
 
 const Navbar = () => {
-    return (
-        <nav className=" font-sans flex items-center justify-between flex-wrap bg-gray-500 py-24 px-40 pb-3">
-
-              {/* <div className="flex items-center flex-shrink-0 text-black mr-6 ">
+  return (
+    <nav className=" font-sans flex items-center justify-between flex-wrap bg-gray-500 py-24 px-40 pb-3">
+      {/* <div className="flex items-center flex-shrink-0 text-black mr-6 ">
                 <span className="font-semibold text-5xl tracking-tight">Go Icons</span>
               </div>
               <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto flex-row-reverse ">
@@ -18,37 +15,28 @@ const Navbar = () => {
 
                 </div>
               </div> */}
-        </nav>
+    </nav>
+
+    // <div className= "bg-gray-700 text-white ">
+    //     <nav className="flex justify-between px-4 py-3">
+    //        <h1>
+    //            Govardhan Icons
+    //        </h1>
+
+    //        <div className="flex">
+    //          <img src="/t1.png" alt="twitter-logo" className="logo"/>
+    //          <Link href="https://twitter.com/compose/tweet"><a>Share on twitter</a></Link>
+    //          <Link href="/" className=""><a>Looking for more classic icons? <b>Get them here -></b></a></Link>
+
+    //        </div>
+
+    //     </nav>
+    // </div>
+  );
+};
+
+export default Navbar;
 
 
 
        
-
-         
-
- 
- 
-        // <div className= "bg-gray-700 text-white ">
-        //     <nav className="flex justify-between px-4 py-3">
-        //        <h1>
-        //            Govardhan Icons
-        //        </h1>
-
-        //        <div className="flex">
-        //          <img src="/t1.png" alt="twitter-logo" className="logo"/>
-        //          <Link href="https://twitter.com/compose/tweet"><a>Share on twitter</a></Link>
-        //          <Link href="/" className=""><a>Looking for more classic icons? <b>Get them here -></b></a></Link>
-
-                 
-        //        </div>
-
-               
-              
-            
-
-        //     </nav>
-        // </div>
-    );
-};
-
-export default Navbar;

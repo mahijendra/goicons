@@ -1,28 +1,52 @@
 import React, { useState } from "react";
-import '../pages/_app'
+import "../pages/_app";
+import myPropTypes from 'prop-types';
 
-function Icons(props) {
-  const { svgItem } = props;
-  const { title, d } = svgItem;
+function Icons({ svgItem, handleMouse, showSvgTitle, index }) {
+  // eslint-disable-next-line no-unused-vars
   const [showIcon, setShowIcon] = useState(true);
 
-  function enableShowTitle() {
-    setShowIcon(true);
-  }
-
   return (
-    
-<svg width="32" height="32" viewBox="0 0 32 32" fill="white">
-        {showIcon ? <path d={d}></path> : null}
+    <div
+      className={`svgItem ${index}`}
+      onMouseEnter={(e) => handleMouse(e, index)}
+      onMouseLeave={(e) => handleMouse(e, -1)}
+      style={{position: "relative"}}
+    >
+      <svg
+        width="28"
+        height="28"
+        viewBox="0 0 32 32"
+        fill="white"
+      >
+        {showIcon ? <path d={svgItem.d}></path> : null}
       </svg>
+      {showSvgTitle === index && (
+        <p
+          style={{
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            color: "red",
+            fontSize: "12px",
+            
+          }}
+
+          className="text-justify"
+        >
+          {svgItem.title}
+        </p>
+      )}
+    </div>
   );
 }
 
+Icons.propTypes = myPropTypes;
+
 export default Icons;
 
-
 // style={{display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gridGap: '10px'}}  className="transform hover:scale-105 hover:bg-opacity-75 transition duration-300 bg-white inline-block mt-20 items-center mr-24
-
 
 // return(
 //   <div className="py-10 px-40 ">
