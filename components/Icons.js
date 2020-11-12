@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "../pages/_app";
 import myPropTypes from 'prop-types';
+import Tippy, { tippy } from '@tippy.js/react'
+import 'tippy.js/dist/tippy.css'
 
 function Icons({ svgItem, handleMouse, showSvgTitle, index }) {
   // eslint-disable-next-line no-unused-vars
@@ -22,21 +24,23 @@ function Icons({ svgItem, handleMouse, showSvgTitle, index }) {
         {showIcon ? <path d={svgItem.d}></path> : null}
       </svg>
       {showSvgTitle === index && (
-        <p
-          style={{
-            position: "absolute",
-            top: "50%",
-            left: "50%",
-            transform: "translate(-50%, -50%)",
-            color: "red",
-            fontSize: "12px",
-            
-          }}
+        <Tippy content={svgItem.title}>
+          <p
+            style={{
+              position: "absolute",
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
+              color: "red",
+              fontSize: "12px",
+              
+            }}
 
-          className="text-justify"
-        >
-          {svgItem.title}
-        </p>
+            className="text-justify"
+          >
+            {svgItem.title}
+          </p>
+        </Tippy>
       )}
     </div>
   );

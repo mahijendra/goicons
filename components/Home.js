@@ -117,7 +117,7 @@ export default Home;
 
           <svg
             className="h-5 w-5 text-gray-400 mr-4"
-            fill="none"
+            fill="none" 
             viewBox="0 0 24 24"
             stroke="currentColor"
           >
