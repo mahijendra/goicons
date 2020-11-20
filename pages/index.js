@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Home from "../components/Home";
 import Icons from "../components/Icons";
 import Search from "../components/Search";
-import Svg from "../components/Svg";
+import Svg from "../components/svg";
 import svgData from "../components/svgData";
 
 const Index = () => {

@@ -25,22 +25,22 @@ function Icons({ svgItem, handleMouse, showSvgTitle, index }) {
       </svg>
       {showSvgTitle === index && (
         <Tippy content={svgItem.title}>
-          <p
-            style={{
-              position: "absolute",
-              top: "50%",
-              left: "50%",
-              transform: "translate(-50%, -50%)",
-              color: "red",
-              fontSize: "12px",
-              
-            }}
+        <p
+          style={{
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            color: "red",
+            fontSize: "12px",
+            
+          }}
 
-            className="text-justify"
-          >
-            {svgItem.title}
-          </p>
-        </Tippy>
+          className="text-justify"
+        >
+          {svgItem.title}
+        </p>
+      </Tippy>
       )}
     </div>
   );
