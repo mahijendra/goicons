@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "../pages/_app";
-
+import myPropTypes from 'prop-types';
+import Tippy, { tippy } from '@tippy.js/react'
+import 'tippy.js/dist/tippy.css'
 
 function Icons({ svgItem, handleMouse, showSvgTitle, index }) {
   // eslint-disable-next-line no-unused-vars
@@ -44,7 +46,7 @@ function Icons({ svgItem, handleMouse, showSvgTitle, index }) {
   );
 }
 
-
+Icons.propTypes = myPropTypes;
 
 export default Icons;
 
