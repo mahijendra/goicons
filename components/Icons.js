@@ -3,10 +3,18 @@ import "../pages/_app";
 import myPropTypes from 'prop-types';
 import Tippy, { tippy } from '@tippy.js/react'
 import 'tippy.js/dist/tippy.css'
+import copy from "copy-to-clipboard"
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Icons({ svgItem, handleMouse, showSvgTitle, index }) {
   // eslint-disable-next-line no-unused-vars
   const [showIcon, setShowIcon] = useState(true);
+  function mahijendra(){
+    let val = '<svg width="24" height="24" viewBox="0 0 24 24" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"><path d="'+svgItem.d+'" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>'
+    copy(val)
+    toast("Copied to Clipboard !")
+  }
 
   return (
     <div
@@ -15,16 +23,17 @@ function Icons({ svgItem, handleMouse, showSvgTitle, index }) {
       onMouseLeave={(e) => handleMouse(e, -1)}
       style={{position: "relative"}}
     >
+    <ToastContainer/>
       <svg
         width="28"
         height="28"
         viewBox="0 0 32 32"
         fill="white"
       >
-        {showIcon ? <path d={svgItem.d}></path> : null}
+        {showIcon ? <path d={svgItem.d} ></path> : null}
       </svg>
       {showSvgTitle === index && (
-        <Tippy content={svgItem.title}>
+        <Tippy interactive={true} content={svgItem.title} >
         <p
           style={{
             position: "absolute",
@@ -33,12 +42,10 @@ function Icons({ svgItem, handleMouse, showSvgTitle, index }) {
             transform: "translate(-50%, -50%)",
             color: "red",
             fontSize: "12px",
-            
           }}
-
           className="text-justify"
-        >
-          {svgItem.title}
+          onClick={mahijendra}
+        >.
         </p>
       </Tippy>
       )}
@@ -109,3 +116,21 @@ export default Icons;
 //   'ArrowCircleUp' : 'M1614 791c8.837 0 16 7.163 16 16s-7.163 16-16 16-16-7.163-16-16 7.163-16 16-16zm0 2.667c-7.364 0-13.333 5.97-13.333 13.333 0 7.364 5.97 13.333 13.333 13.333 7.364 0 13.333-5.97 13.333-13.333 0-7.364-5.97-13.333-13.333-13.333zm.5 5.333c.734 0 1.344.468 1.474 1.087l4.635 4.637a1.333 1.333 0 01-1.76 1.996l-.125-.11-2.724-2.724v9.78c0 .737-.672 1.334-1.5 1.334-.77 0-1.403-.515-1.49-1.178l-.01-.155v-10.782l-3.724 3.724a1.333 1.333 0 01-1.996-1.76l.11-.125 5.334-5.333a1.333 1.333 0 011.277-.349c.135-.035.275-.048.415-.04l.084-.002z',
 
 // ]
+
+
+
+
+// <p
+//           style={{
+//             position: "absolute",
+//             top: "50%",
+//             left: "50%",
+//             transform: "translate(-50%, -50%)",
+//             color: "red",
+//             fontSize: "12px",
+            
+//           }}
+
+//           className="text-justify"
+//         >{svgItem.title}
+//         </p>

@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
+import { render } from "react-dom"
 import Home from "../components/Home";
 import Icons from "../components/Icons";
 import Search from "../components/Search";
 import Svg from "../components/svg";
 import svgData from "../components/svgData";
+
 
 const Index = () => {
   // eslint-disable-next-line no-unused-vars
@@ -11,6 +13,7 @@ const Index = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const [showSvgTitle, setShowSvgTitle] = useState(false);
+  
 
   useEffect(() => {
     const results = svgItems.filter((svgIcon) =>
@@ -27,6 +30,7 @@ const Index = () => {
     }  
   };
 
+  
   return (
     <div>
       <Home />
