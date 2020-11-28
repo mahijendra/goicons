@@ -4,16 +4,20 @@ import myPropTypes from 'prop-types';
 import Tippy, { tippy } from '@tippy.js/react'
 import 'tippy.js/dist/tippy.css'
 import copy from "copy-to-clipboard"
-import { ToastContainer, toast } from 'react-toastify';
+import { toast, Zoom } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'
 import 'react-toastify/dist/ReactToastify.css';
 
+toast.configure()
 function Icons({ svgItem, handleMouse, showSvgTitle, index }) {
   // eslint-disable-next-line no-unused-vars
   const [showIcon, setShowIcon] = useState(true);
-  function mahijendra(){
-    let val = '<svg width="24" height="24" viewBox="0 0 24 24" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"><path d="'+svgItem.d+'" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>'
+
+  
+  function CopyToClipboard(){
+    let val = '<svg width="24" height="24" viewBox="0 0 24 24" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"><path d="'+svgItem.d+'" fill="currentColor" fill-rule="evenodd" clipxrule="evenodd"></path></svg>'
     copy(val)
-    toast("Copied to Clipboard !")
+    toast.dark('Copied to Clipboard!' , {position: toast.POSITION.BOTTOM_CENTER, autoClose: 1500, transition: Zoom})
   }
 
   return (
@@ -23,7 +27,6 @@ function Icons({ svgItem, handleMouse, showSvgTitle, index }) {
       onMouseLeave={(e) => handleMouse(e, -1)}
       style={{position: "relative"}}
     >
-    <ToastContainer/>
       <svg
         width="28"
         height="28"
@@ -44,7 +47,7 @@ function Icons({ svgItem, handleMouse, showSvgTitle, index }) {
             fontSize: "12px",
           }}
           className="text-justify"
-          onClick={mahijendra}
+          onClick={CopyToClipboard}
         >.
         </p>
       </Tippy>
