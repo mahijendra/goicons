@@ -15,9 +15,9 @@ function Icons({ svgItem, handleMouse, showSvgTitle, index }) {
 
   
   function CopyToClipboard(){
-    let val = '<svg width="24" height="24" viewBox="0 0 24 24" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"><path d="'+svgItem.d+'" fill="currentColor" fill-rule="evenodd" clipxrule="evenodd"></path></svg>'
+    let val = '<svg width="24" height="24" viewBox="0 0 32 32" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"><path d="'+svgItem.d+'" fill="currentColor" fill-rule="evenodd" clipxrule="evenodd"></path></svg>'
     copy(val)
-    toast.dark('Copied to Clipboard!' , {position: toast.POSITION.BOTTOM_CENTER, autoClose: 1500, transition: Zoom})
+    toast.dark('Copied to Clipboard!' , {position: toast.POSITION.BOTTOM_CENTER, autoClose: 1500, transition: Zoom, })
   }
 
   return (
