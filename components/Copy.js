@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import { render } from "react-dom";
+import React, {  } from "react";
+import {CopyToClipboard} from "react-copy-to-clipboard/lib/Component";
 
 const ReactCopyToClipboard = () => {
-  const [value, setValue] = useState("");
-  const [copy, setCopy] = useState("false");
+  /*const [value, setValue] = useState("");
+  const [copy, setCopy] = useState("false");*/
 
   return (
     <div>
@@ -26,7 +26,7 @@ const ReactCopyToClipboard = () => {
         onCopy={() => this.setState({ copied: true })}
       >
         <button>Copy to clipboard with button</button>
-      </CopyToClipboard
+      </CopyToClipboard>
 
       {this.state.copied ? <span style={{ color: "red" }}>Copied.</span> : null}
     </div>
