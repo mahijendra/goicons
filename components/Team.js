@@ -24,7 +24,7 @@ export default function Example() {
             <div className="max-w-7xl mx-auto py-12 px-4 text-center sm:px-6 ">
                 <div className="space-y-8 sm:space-y-12 flex justify-center">
                     <ul className="mx-auto grid grid-cols-2 gap-x-8 md:gap-x-6 lg:max-w-5xl">
-                        {people.map((person, index) => (
+                        {people.map((person) => (
                             <li key={person.name}>
                                 <div className="space-y-4">
                                     <div className="mx-auto rounded-full">Designed</div>

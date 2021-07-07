@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../pages/_app";
 import myPropTypes from 'prop-types';
-import Tippy, { tippy } from '@tippy.js/react'
+import Tippy from '@tippy.js/react'
 import 'tippy.js/dist/tippy.css'
 import copy from "copy-to-clipboard"
 import { toast, Zoom } from 'react-toastify';
