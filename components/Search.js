@@ -3,10 +3,10 @@ import React from "react";
 // eslint-disable-next-line react/prop-types
 const Search = ({ searchTerm, setSearchTerm }) => {
   return (
-    <div className="py-2 px-32 bg-transparent ">
+    <div className="py-2 lg:px-32 bg-transparent ">
       <div className="flex rounded-md ">
         <div className="relative flex-grow focus-within:z-10">
-          <div className="absolute inset-y-0 left-0 pl-12 flex items-center pointer-events-none ">
+          <div className="absolute inset-y-0 left-0 pl-12 flex items-center pointer-events-none font-nunito ">
             <svg
               className="h-5 w-5 text-gray-400 bg-none"
               fill="none"
@@ -26,7 +26,7 @@ const Search = ({ searchTerm, setSearchTerm }) => {
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               id="email"
-              className="form-input min-w-full p-2 bg-transparent text-gray-100 border-gray-100 border bg-opacity-gray-100 rounded-l-md rounded-r-md pl-12 sm:text-sm sm:leading-10 focus:outline-none "
+              className="form-input min-w-full p-2 bg-transparent text-gray-100 border-gray-600 border bg-opacity-gray-200 rounded-full pl-12 sm:text-sm sm:leading-10 focus:outline-none font-nunito "
               placeholder="Search all 200 Icons"
             ></input>
           </div>

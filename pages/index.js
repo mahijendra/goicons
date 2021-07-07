@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
-import { render } from "react-dom"
-import Home from "../components/Home";
+import Demo from "../components/Demo";
 import Icons from "../components/Icons";
 import Search from "../components/Search";
 import Svg from "../components/svg";
 import svgData from "../components/svgData";
+import Share from "../components/Share";
 
 
 const Index = () => {
@@ -33,7 +33,7 @@ const Index = () => {
   
   return (
     <div>
-      <Home />
+      <Demo />
       <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <Svg
         handleMouse={handleMouse}
@@ -41,6 +41,8 @@ const Index = () => {
         svgItems={svgItems}
         showSvgTitle={showSvgTitle}
       />
+        <hr className="max-w-7xl opacity-25 lg:mx-16"></hr>
+      <Share />
     </div>
   );
 };
