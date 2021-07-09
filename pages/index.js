@@ -41,7 +41,7 @@ const Index = () => {
         svgItems={svgItems}
         showSvgTitle={showSvgTitle}
       />
-        <hr className="max-w-7xl opacity-25 lg:mx-16"></hr>
+        <hr className="lg:max-w-7xl opacity-25 lg:mx-16 md:mx-4 sm:mx-5"></hr>
       <Share />
     </div>
   );

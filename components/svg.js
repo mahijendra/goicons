@@ -5,7 +5,7 @@ import Icons from "./Icons";
 function Svg({ searchResults, handleMouse, showSvgTitle }) {
   return (
     <div
-      className="lg:px-40 lg:py-24 "
+      className="lg:px-40 lg:py-24"
       style={{
         display: "grid",
         gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))",
